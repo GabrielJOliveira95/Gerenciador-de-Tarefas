@@ -21,16 +21,6 @@ class TarefaDAO(context: Context) : InterfaceDAO {
         contetValue.put("tarefas", tarefa.tarefaModel)
         try {
             escritaDB.insert(TABELA_TAREFA, null, contetValue)
-
-
-            Log.i("Sucesso", "Sucesso ao inserir dados na tabela")
-            val ccc: Cursor =
-                dbHelper.readableDatabase.rawQuery("SELECT * FROM $TABELA_TAREFA", null)
-            val id = ccc.getColumnIndex("id")
-            val nome = ccc.getColumnIndex("tarefas")
-            ccc.moveToFirst()
-
-
         } catch (e: Exception) {
             Log.i("Erro", "Erro ao inserir dados na tabela" + e.message)
             return false
@@ -58,7 +48,6 @@ class TarefaDAO(context: Context) : InterfaceDAO {
             cursor.moveToFirst()
 
             while (true) {
-                Log.i("TESTE", "ID " + cursor.getString(id) + " NOME ${cursor.getString(nome)}")
                 val model = TarefaModel()
 
                 model.id = cursor.getInt(id)
