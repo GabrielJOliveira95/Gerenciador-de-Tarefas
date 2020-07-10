@@ -54,7 +54,7 @@ class AdicionarTarefasActivity : AppCompatActivity() {
             tarefaModel.tarefaModel = txt_input_tarefas.text.toString()
             val tarefaDAO = TarefaDAO(applicationContext)
             tarefaDAO.inserir(tarefaModel)
-            Toast.makeText(applicationContext, "Tarefa Adicionada", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Tarefa Adicionada", Toast.LENGTH_SHORT).show()
             finish()
         } else {
             validarCampo()
@@ -82,7 +82,7 @@ class AdicionarTarefasActivity : AppCompatActivity() {
             val tarefaDAO = TarefaDAO(applicationContext)
             tarefaModel.tarefaModel = txt_input_tarefas.text.toString()
             tarefaDAO.alterar(tarefaModel)
-            Toast.makeText(applicationContext, "Tarefa Alterada", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Tarefa Alterada", Toast.LENGTH_SHORT).show()
             finish()
         } else {
             validarCampo()

@@ -3,10 +3,8 @@ package com.cursoandroid.oliveiragabriel.gerenciadordetarefas.activity
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cursoandroid.oliveiragabriel.gerenciadordetarefas.R
 import com.cursoandroid.oliveiragabriel.gerenciadordetarefas.adapter.OnClickDeletarTarefas
@@ -46,8 +44,6 @@ class MainActivity : AppCompatActivity() {
 
 
             override fun onClickEditar(position: Int) {
-                Toast.makeText(applicationContext, "Editar", Toast.LENGTH_SHORT).show()
-
                 tarefaModel.tarefaModel = mutableListTarefas[position].tarefaModel
                 tarefaModel.id = mutableListTarefas[position].id
 
