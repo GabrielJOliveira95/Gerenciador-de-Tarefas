@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Gerenciador De Tarefas</string>
     <string name="action_confirmar">Confirmar</string>
-    <string name="adcionar_tarefa">Adcionar Tarefa</string>
-    <string name="adcionar_uma_nova_tarefa">Adcionar uma nova tarefa</string>
+    <string name="adicionar_tarefa">Adicionar Tarefa</string>
+    <string name="adicionar_uma_nova_tarefa">Adicionar uma Nova Tarefa</string>
+    <string name="editar_tarefa">Editar Tarefa</string>
 </resources>

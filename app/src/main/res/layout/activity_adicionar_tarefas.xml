@@ -23,7 +23,7 @@
             android:id="@+id/txt_input_tarefas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/adcionar_uma_nova_tarefa"
+            android:hint="@string/adicionar_uma_nova_tarefa"
             android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,4 +39,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_check_black_24dp"
         android:focusable="true" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
