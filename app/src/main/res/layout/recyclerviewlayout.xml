@@ -24,7 +24,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:padding="6dp"
-            android:text="Ir ao Mercado"
+            android:text="@string/ir_ao_mercado"
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@android:color/background_dark"
@@ -43,7 +43,8 @@
             android:layout_marginRight="16dp"
             app:layout_constraintEnd_toStartOf="@+id/icone_detelar"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_edit_black_24dp" />
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            android:contentDescription="@string/todo" />
 
         <ImageView
             android:id="@+id/icone_detelar"
@@ -52,7 +53,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/todo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_delete_black_24dp" />
